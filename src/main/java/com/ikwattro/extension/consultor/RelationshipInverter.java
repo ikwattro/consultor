@@ -12,7 +12,7 @@ import javax.ws.rs.core.Response.Status;
 
 import org.neo4j.graphdb.GraphDatabaseService;
 
-@Path( "/ikwattro" )
+@Path( "" )
 public class RelationshipInverter
 {
     private final GraphDatabaseService database;
@@ -23,8 +23,8 @@ public class RelationshipInverter
     }
 
     @GET
-    @Produces( MediaType.TEXT_PLAIN )
-    @Path( "/" )
+    @Produces( MediaType.APPLICATION_JSON )
+    //@Path( "/" )
     public Response hello()
     {
         // Do stuff with the database

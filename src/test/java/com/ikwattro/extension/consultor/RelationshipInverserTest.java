@@ -10,6 +10,7 @@ import org.neo4j.harness.ServerControls;
 import org.neo4j.harness.TestServerBuilders;
 import org.neo4j.test.Mute;
 import org.neo4j.test.server.HTTP;
+import java.io.File;
 
 import static org.junit.Assert.*;
 
@@ -29,12 +30,7 @@ public class RelationshipInverserTest
         {
             // When
             String endpoint = server.httpURI().resolve( "ikwattro" ).toString();
-            String base = "http://localhost:7474";
-            HTTP.Response responseA = HTTP.GET(base);
-            System.out.println(responseA.toString());
-            System.out.println(endpoint);
-            HTTP.Response response = HTTP.GET( endpoint );
-            System.out.println(response);
+            HTTP.Response response = HTTP.GET(endpoint);
 
             // Then
             assertEquals(200, response.status());
