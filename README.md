@@ -8,9 +8,10 @@ Download the repository and build the package
 
 ```bash
 git clone git@github.com:ikwattro/consultor
-
 mvn clean package
 ```
+
+And deploy the jar file to the `plugins` folder of your Neo4j server
 
 ## Consultor features
 
