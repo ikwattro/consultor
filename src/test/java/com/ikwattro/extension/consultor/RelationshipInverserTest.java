@@ -1,6 +1,5 @@
 package com.ikwattro.extension.consultor;
 
-import org.json.JSONArray;
 import org.junit.Rule;
 import org.junit.Test;
 import org.neo4j.harness.ServerControls;
